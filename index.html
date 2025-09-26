@@ -3,57 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Cubes Project</title>
+    <title>E-Cubes Project - Home</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; margin: 2em; }
-        h1, h2, h3 { color: #333; }
-       .assignment { border: 1px solid #ccc; padding: 1em; margin-bottom: 2em; border-radius: 8px; }
-       .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; margin-bottom: 1em; }
-       .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            line-height: 1.6; 
+            margin: 0;
+            background-color: #f6f8fa;
+            color: #24292e;
+        }
+      .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        header,.content-box {
+            background-color: #ffffff;
+            border: 1px solid #e1e4e8;
+            padding: 1.5em; 
+            margin-bottom: 2em; 
+            border-radius: 8px;
+        }
+        nav {
+            background-color: #24292e;
+            padding: 1em 0;
+            margin-bottom: 2em;
+        }
+        nav ul {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2em;
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1, h2 { 
+            color: #24292e;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+        }
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.5em; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 0.5em; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>E-Cubes: a Dissemination, Teaching, and Training Framework</h1>
-        <p>This website serves as the Support Layer for the E-Cubes project, providing all necessary documentation and video tutorials for the assignments.</p>
-    </header>
-
-    <main>
-        <h2>Project Documentation</h2>
+    <nav>
         <ul>
-            <li><a href="README.md">Project README</a>: An overview of the E-Cubes framework.</li>
-            <li><a href="/docs/IMPLEMENTATION.md">Assignment Implementation Guide</a>: Detailed instructions for all assignments.</li>
-            <li><a href="/docs/REQUIRED_TOOLS.md">Required Tools</a>: A list of all necessary software with download links.</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assignments/index.html">Assignments</a></li>
         </ul>
+    </nav>
 
-        <hr>
+    <div class="container">
+        <header>
+            <h1>E-Cubes: A Dissemination, Teaching, and Training Framework</h1>
+        </header>
 
-        <section class="assignment">
-            <h2>Assignment 1</h2>
+        <main>
+            <section class="content-box">
+                <h2>Project Overview</h2>
+                <p>There is a need for easy-to-install, easy-to-use, and easy-to-support educational materials that can be distributed to different individuals and communities lacking access to proper cyber resources and the support of dedicated IT staff. [3] Addressing this need, we introduce E-Cubes, a customizable, extensible, and convenient educational framework, which is deployed as open-access, plug-and-play, and hands-on learning modules. [3]</p>
+                <p>E-Cubes is available via the Open Source via CC BY (Creative Commons) licensing option as a series of self-contained modules featuring four layers: [3]</p>
+                <ul>
+                    <li><strong>The Container layer:</strong> Provides enhanced convenience for installing E-Cubes in user-specific hardware and software platforms leveraging OS-level virtualization. [3]</li>
+                    <li><strong>The Tools layer:</strong> Provides the necessary back-end software platforms supporting the educational tasks. [3]</li>
+                    <li><strong>The Payload layer:</strong> Contains the educational materials for the learning experience, such as course assignments and lab sessions. [3]</li>
+                    <li><strong>The Support layer:</strong> Contains additional materials like tutorials, videos, and documentation websites to assist students. [3]</li>
+                </ul>
+            </section>
             
-            <h3>Videos</h3>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID_1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID_2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
-
-        <section class="assignment">
-            <h2>Assignment 2</h2>
-
-            <h3>Videos</h3>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID_3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
-
-    </main>
+            <section class="content-box">
+                <h2>Project Documentation on GitHub</h2>
+                <p>For detailed information, please view the project files directly on our GitHub repository.</p>
+                <ul>
+                    <li><a href="https://github.com/vineethkodakandla/E-cubes-project/blob/main/README.md" target="_blank">Project README</a></li>
+                    <li><a href="https://github.com/vineethkodakandla/E-cubes-project/blob/main/docs/IMPLEMENTATION.md" target="_blank">Assignment Implementation Guide</a></li>
+                    <li><a href="https://github.com/vineethkodakandla/E-cubes-project/blob/main/docs/REQUIRED_TOOLS.md" target="_blank">Required Tools</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
 
 </body>
 </html>
